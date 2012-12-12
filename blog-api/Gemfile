@@ -6,7 +6,7 @@ gem "active_model_serializers", github: "rails-api/active_model_serializers"
 
 gem 'sqlite3'
 
-gem 'tamingthemindmonkey', :path => '../tamingthemindmonkey'
+gem 'tamingthemindmonkey', :path => '../blog-admin'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
