@@ -1,8 +1,8 @@
 Gem::Specification.new do |s|
-  s.name        = 'tamingthemindmonkey'
+  s.name        = 'blog'
   s.version     = '0.0.0'
   s.date        = '2012-12-09'
-  s.summary     = "Taming the Mind Monkey"
+  s.summary     = "Taming the Mind Monkey Blog"
   s.authors     = ["Robin Roestenburg"]
   s.email       = 'robinroestenburg@gmail.com'
   s.homepage    = 'http://www.tamingthemindmonkey.com'

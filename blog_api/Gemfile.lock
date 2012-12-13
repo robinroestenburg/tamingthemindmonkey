@@ -6,9 +6,15 @@ GIT
       activemodel (>= 3.0)
 
 PATH
-  remote: ../blog-admin
+  remote: ../blog
   specs:
-    tamingthemindmonkey (0.0.0)
+    blog (0.0.0)
+      sinatra (>= 0.9.2)
+
+PATH
+  remote: ../blog_admin
+  specs:
+    blog_admin (0.0.0)
       sinatra (>= 0.9.2)
 
 GEM
@@ -120,8 +126,9 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers!
+  blog!
+  blog_admin!
   rails (= 3.2.9)
   rails-api
   rspec-rails (~> 2.0)
   sqlite3
-  tamingthemindmonkey!

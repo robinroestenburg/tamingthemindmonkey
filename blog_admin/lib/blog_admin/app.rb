@@ -1,6 +1,6 @@
 require 'sinatra/base'
 
-class TamingTheMindMonkey < Sinatra::Base
+class BlogAdmin < Sinatra::Base
 
   set :static, true
   set :public_folder, File.expand_path('..', __FILE__)

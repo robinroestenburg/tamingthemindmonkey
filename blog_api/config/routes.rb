@@ -1,7 +1,8 @@
 TamingthemindmonkeyApi::Application.routes.draw do
   resources :posts, except: :edit
 
-  mount TamingTheMindMonkey.new, :at => '/'
+  mount Blog.new, :at => '/'
+  mount BlogAdmin.new, :at => '/admin'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
