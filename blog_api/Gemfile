@@ -8,6 +8,8 @@ gem 'sqlite3'
 
 gem 'blog',       path: '../blog'
 gem 'blog_admin', path: '../blog_admin'
+
+gem 'devise'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

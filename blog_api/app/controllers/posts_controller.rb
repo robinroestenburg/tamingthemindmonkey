@@ -1,5 +1,7 @@
 class PostsController < ApplicationController
 
+  before_filter :authenticate_admin!
+
   def show
     @post = Post.find(params[:id])
     render :json => @post
