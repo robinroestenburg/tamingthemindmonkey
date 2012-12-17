@@ -2,7 +2,7 @@ TamingthemindmonkeyApi::Application.routes.draw do
 
   mount Blog.new, :at => '/'
 
-  namespace :admins do
+  namespace :admin do
     devise_for :admins, :controllers => { :sessions => "admins/sessions" }
     resources :posts, except: :edit
 
