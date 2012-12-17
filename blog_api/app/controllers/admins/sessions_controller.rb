@@ -7,7 +7,8 @@ module Admins
       return invalid_login_attempt unless admin
 
       if admin.valid_password?(params[:user_login][:password])
-        SignsInAdmin.new(admin).perform
+        sign_in(:admin, admin)
+        admin.ensure_authentication_token!
         render :json=> {:success=>true, :auth_token=>admin.authentication_token, :email=>admin.email}
         return
       end

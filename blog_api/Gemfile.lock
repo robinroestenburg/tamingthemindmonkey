@@ -179,6 +179,7 @@ DEPENDENCIES
   database_cleaner
   devise
   launchy
+  rack-test
   rails (= 3.2.9)
   rails-api
   rspec-rails (~> 2.0)
