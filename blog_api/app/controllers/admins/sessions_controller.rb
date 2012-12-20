@@ -1,5 +1,6 @@
 module Admins
   class SessionsController < ApplicationController
+
     before_filter :ensure_params_exist
 
     def create
@@ -7,7 +8,8 @@ module Admins
       return invalid_login_attempt unless admin
 
       if admin.valid_password?(params[:user_login][:password])
-        sign_in(:admin, admin)
+        # I don't want to sign them in.
+        #sign_in(:admin, admin)
         admin.ensure_authentication_token!
         render :json=> {:success=>true, :auth_token=>admin.authentication_token, :email=>admin.email}
         return
